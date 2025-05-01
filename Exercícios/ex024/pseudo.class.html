@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+            
+        a{
+            text-decoration: none;
+            font-weight: bold;
+        }
+            /* neste exemplo é quando visitar a página, fica vermelho*/
+        a:visited{
+            color: red;       
+        }
+            /* neste caso quando passar o mouse vai sublinhar o link*/
+        a:hover{
+            text-decoration: underline;
+        } 
+            /* neste caso estou adicionando um pseudo-element, no final (after) a descrição de (link)*/
+        a::after{
+            content: "[link]";
+            color: gray;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Links personalizados com pseudo class e elements</h1>
+    <li><a href="https://www.google.com.br" target="_blank">Link google</a></li>
+    <li><a href="https://www.instagram.com.br" target="_blank">Link instagram</a></li>
+    <li><a href="https://www.twitter.com.br" target="_blank">Link twitter</a></li>
+    
+</body>
+</html>

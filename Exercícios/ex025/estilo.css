@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+header{
+    background-color: rgb(214, 212, 212);
+    padding: 5px;
+}
+
+nav{
+    background-color: gray;
+    box-shadow: 3px 9px 8px 3px rgba(0, 0, 0, 0.781);
+}
+
+nav > a{
+    text-decoration: none;
+    color: rgba(39, 2, 4, 0.829);
+
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+main{
+    background-color: rgb(36, 36, 33);
+    color: blanchedalmond;
+    text-align: justify;
+
+}
+
+main > article > h2{
+    color: rgb(65, 143, 123);
+}
+
+
+footer {
+    background-color: gray;
+    padding: 1px;
+    text-align: center;
+}
+    
+    footer > p{
+    font-style: italic;
+;
+    
+}
+
+
