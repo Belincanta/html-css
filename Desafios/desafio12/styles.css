@@ -21,6 +21,7 @@
 html, body{
     min-height: 100vh;
     background-color: darkgrey;
+    font-family: var(--fonte01);
 }
 
 header{
@@ -32,6 +33,8 @@ header{
 header > h1{ /*leitura: h1 que estiver dentro do cabeçalho*/
     padding-top: 50px;
     font-variant: small-caps; /*letras maiúsculas*/
+    font-family: var(--fonte02);
+    font-size: 3.5vw;
 }
 
 header > p{
@@ -53,11 +56,14 @@ section{
     padding-bottom: 10vh;
     line-height: 2em; /*espaçamento entre as linhas*/
     padding-left: 30px; /*usado para dar espaço no inicio do texto*/
+    font-family: var(--fonte03);
+    font-size: 1.5vw;
 }
 
 section.normal{
     background-color: white;
     color: black;
+    
 }
 
 section.imagem{
@@ -66,7 +72,7 @@ section.imagem{
 }
 
 section.imagem > p{
-    width: 400px;
+    
     background-color: rgba(0, 0, 0, 0.555);
 
 }
