@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Páginas com iframe</title>
+
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif, Times, serif;            
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        h2{
+            background-color: rgba(141, 140, 140, 0.26);
+        }
+
+        iframe{
+            width: 95vw;
+            height: 400px;
+            border: 1px solid black;            
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <h1>Testando iframes diversos</h1>
+    <h2>Faça a sua escolha</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, assumenda laborum laudantium deleniti corrupti quisquam, cumque dolor quo consequatur minima consectetur et ipsam perspiciatis sit vero necessitatibus reprehenderit illo sed!Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur velit consequuntur eius fugit repellendus ex quod! Velit esse vitae earum pariatur ducimus, mollitia dolor, eos, est hic non iure culpa?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quos fugiat facere culpa nostrum consequatur eaque doloribus nam, ratione, illum odit, expedita quaerat quia accusantium esse exercitationem voluptatibus reiciendis maiores.</p>
+
+    <ul>
+        <li><a href="paginas_extras/pag001.html" target="frame">Abrir página 1</a></li>
+        <li><a href="paginas_extras/pag002.html" target="frame">Abrir página 2</a></li>
+        <li><a href="paginas_extras/pag003.html" target="frame">Abrir página 3</a></li>        
+    </ul>
+    
+    <iframe name="frame" srcdoc="<h1> Selecione uma das páginas acima</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellat reiciendis id nesciunt sunt harum sapiente tenetur debitis aspernatur facilis nostrum quam voluptatum, ad necessitatibus? Aut blanditiis error dolores atque?
+    </p>"> <!--srcdoc permite configurar html dentro, mas precisa ser um do lado do outro-->
+        <p>Infelizmente seu navegador não suporta o frame</p> <!--caso não carregue o frame, vai aparecer esta mensagem-->
+    </iframe>
+    
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, assumenda laborum laudantium deleniti corrupti quisquam, cumque dolor quo consequatur minima consectetur et ipsam perspiciatis sit vero necessitatibus reprehenderit illo sed!Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur velit consequuntur eius fugit repellendus ex quod! Velit esse vitae earum pariatur ducimus, mollitia dolor, eos, est hic non iure culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error consectetur veritatis quibusdam est neque harum eum ullam hic ex tempora, incidunt ipsum, officiis, perferendis accusantium tenetur explicabo distinctio at!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit consectetur ipsam fuga explicabo ut corrupti eos magni exercitationem. Exercitationem, sit quo velit amet cum alias asperiores adipisci maxime impedit reprehenderit.</p>
+    
+</body>
+</html>
