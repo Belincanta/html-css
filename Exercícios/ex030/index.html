@@ -13,9 +13,16 @@
 <body>
     <h1>Meu primeiro formulário</h1>
     
-    <form> <!--sempre que usar um formulário precisa estar dentro de form - e também vai pedir uma ação-->
-        <p>Nome <input type="text" name="nome" id="nome" size="26"></p>
-        <p>Sobrenome <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form action="cadastro.php" autocomplete="off"> <!--sempre que usar um formulário precisa estar dentro de form - e também vai pedir uma ação-->
+    <!--o uso do action é para salvar o formulário, neste caso em um arquivo php-->
+    <!--a tag autocomplete = off, significa que quando clicar no formulário ele não vai sugerir o dado preenchido anteriormente-->
+        <p><label for="inome">Nome</label> 
+            <input type="text" name="nome" id="inome" size="26"></p>
+
+        <p><label for="isobrenome">Sobrenome</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+    <!--no label (etiqueta) vai referenciar o formulário com o input, usando o id-->
+
         <p><input type="submit" value="Enviar"></p>
     </form>
     
