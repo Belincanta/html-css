@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+
+    <form action="cadastro.php" method="POST" autocomplete="on">
+    <!--autocomplete on significa que vai ser sugerido o preenchimento do formulário, conforme histórico-->
+    <!--method de envio POST, devido estar sendo enviado dados sensíveis, como a senha, se utilizado o method GET, iria aparecer na URL, quando enviado-->
+
+    <p>
+        <label for="iusu">Usuário: </label>
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" placeholder="Digite o nome do usuário" autocomplete="username">
+        <!--required é para deixar obrigatório o preenchimento-->
+        <!--minlength e maxlength define o mínimo e máximo de caracteres-->
+        <!--placeholder é para aparecer dentro do formulário como diga, antes de ser preenchido-->
+        <!--autocomplete username, vai sugerir somente o que é nome de usuário, para funcionar, o autocomplete no form deve estar on-->
+    </p>
+
+    <p>
+        <label for="isen">Senha: </label>
+        <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" placeholder="Digite a senha" autocomplete="current-password">
+        <!--required é para deixar obrigatório o preenchimento-->
+        <!--minlength e maxlength define o mínimo e máximo de caracteres-->
+        <!--placeholder é para aparecer dentro do formulário como diga, antes de ser preenchido-->
+        <!--autocomplete current-password, vai sugerir somente a senha atual, para funcionar, o autocomplete no form deve estar on-->
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+
+    </form>
+    
+</body>
+</html>
