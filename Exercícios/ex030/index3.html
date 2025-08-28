@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Testando outros botões de input</h1>
+
+    <form action="cadastro.php" method="GET" autocomplete="on">
+        <!--action = para onde será enviado os formulários-->
+        <!--GET = formato de envio que vai aparecer na URL-->
+        <!--autocomplete = para sugerir dados já enviados nos formulários-->
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required placeholder="Nome do Aluno" autocomplete="name" maxlength="30">
+            <!--formulário obrigatório (required) de nome, com botão de texto-->
+            <!--placeholder = sugere o que é o preenchimento do formulário-->
+            <!--autocomplete 'name' = vai sugerir os dados que são nomes, mas para isso é necessário deixar 'on' na tag form-->
+            <!--maxlength = é o máximo de digitos no formulário-->
+        </p>
+
+        <p>
+            <label for="imedia">Média Notas:</label>
+            <input type="number" name="media" id="imedia" required placeholder="0 a 10" min="0" max="10" step="0.5">
+            <!--formulário obrigatório (required) de nota, com botão de número-->
+            <!--placeholder = sugere as médias a serem informadas-->
+            <!--min e max = média mínima e máxima a ser preenchida no formulário-->
+            <!--step = é o valor permitido a ser informado no intervalo de cada nota, neste exemplo = 0,0 > 0,5 > 1,0 > 1,5...-->
+        </p>
+
+        <p>
+            <label for="iperiodo">Período Letivo:</label>
+            <input type="month" name="periodo" id="iperiodo" required>
+            <!--formulário obrigatório (required) de mês referência, com botão de mês/ano-->
+        </p>
+
+        <p>
+            <label for="idata">Data da Prova:</label>
+            <input type="date" name="data" id="idata" required>
+            <!--formulário obrigatório (required) de data, com botão de dia/mês/ano-->
+        </p>
+
+        <p>
+            <label for="ihora">Horário da Prova</label>
+            <input type="time" name="hora" id="ihora" required>
+            <!--formulário obrigatório (required) de hora, com botão de horas-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar Dados">
+            <input type="reset" value="Limpar Dados">
+            <!--botão de enviar e limpar dados dos formulários-->
+        </p>
+
+    </form>
+    
+</body>
+</html>
