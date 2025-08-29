@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novos fomulários</title>
+
+    <style>
+        fieldset{
+            border: solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando formulários de Telefone e e-mail</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset> <!--serve para agrupar dados, conjunto de dados-->
+            <legend>Dados Pessoas</legend> <!--nome para o conjunto de dados-->
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="Nome" id="inome" required minlength="5" maxlength="20" autocomplete="name">
+                <!--formulário para nome e um botão do tipo texto, obrigatório com mínimo e máximo de letras, podendo ser autocompletado com nomes anteriores digitados-->
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+                <!--formulário para e-mail e um botão do tipo e-mail, obrigatório, podendo ser autocompletado com e-mails anteriores digitados-->
+            </p>
+            <p>
+                <label for="ifone">Telefone/Celular</label>
+                <input type="tel" name="fone" id="ifone" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx">
+                <!--formulário de telefone e um botão do tipo telefone, obrigatório, podendo ser autocompletado com telefones anteriores digitados-->
+                 <!--estudar mais sobre RegEx = expressões regulares. Exemplo - pattern (criar um tipo de mascara para ser preenchida)
+                    "^\(\d{2}\)\d{4,5}-\d{4}$"
+                    \(para abrir parênteses\)
+                    \d = informa que é um dígito
+                    {informa a qtde de dígito}-->
+            </p>
+        </fieldset>
+
+       
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            <!--botões de enviar e limpar os formulários-->
+        </p>
+    </form>
+    
+</body>
+</html>
