@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        fieldset{
+            border: 1px solid black;
+        }
+
+        input#botao {
+            margin-top: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário Radio e Checkbox</h1>
+    <form action="cadastro.php" method="get">
+        
+        <fieldset> <!--conjunto de dados-->
+            <legend>Sexo</legend> <!--título do conjunto de dados-->
+            <input type="radio" name="sexo" id="isxmas"> <label for="isxmas"> Masculino </label><br>
+            <input type="radio" name="sexo" id="isxfem"> <label for="isxfem"> Feminino </label>
+            <!--botão radio, seria para marcar uma opção-->
+            <!--importante quando usar este botão é usar o mesmo 'name', assim quando for marcado a outra opção, desmarcará a anterior-->
+        </fieldset>
+
+        <fieldset> <!--conjundo de dados-->
+            <legend>Esportes Favoritos</legend> <!--título do conjunto de dados-->
+            <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label> <br>
+            <input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquete</label> <br>
+            <input type="checkbox" name="vol" id="ivol"> <label for="ivol">Volei</label> <br>
+            <input type="checkbox" name="ten" id="iten"> <label for="iten">Tênis</label>
+            <!--botão checkbox permite selecionar mais de uma opção-->
+            <!--cuidar quando for configurar o label, para não marcar o id errado, marcando a opção errada ao selecionar o botão-->
+        </fieldset>
+
+        <input id="botao" type="submit" value="Enviar">
+        <input id="botao" type="reset" value="Limpar">
+        <!--botões de enviar e limpar os formulários-->
+    </form>
+    
+</body>
+</html>
