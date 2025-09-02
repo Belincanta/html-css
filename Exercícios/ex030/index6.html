@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários de Cor e Foto</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icor">Escolha a Cor:</label>
+            <input type="color" name="cor" id="icor" value="#FFFFFF">
+            <!--botão para selecionar a cor, podendo ser personalizável a cor que iniciará o visualização-->
+        </p>
+
+        <p>
+            <label for="ifoto">Escolha a Foto:</label>
+            <input type="file" name="foto" id="ifoto">
+            <!--botão para carregar fotos, mas para ser enviadas, é necessário o método POST, devido a limitação do GET-->
+            <!--cria-se um modal de envio, para selecionar o arquivo, quando selecionado, ao lado do botão, vai aparecer o nome do arquivo-->
+        </p>
+
+        <p>
+            <label for="inivel">Avalie a Seguir (1 a 10)</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="10">
+            <!--botão de avaliação, com a opção de arastar para avaliar, normalmente vai de 0 a 100, mas podendo ser configurável-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            <!--botão de enviar e limpar os formulários-->
+        </p>
+
+    </form>
+</body>
+</html>
