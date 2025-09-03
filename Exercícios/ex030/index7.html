@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Formulário</title>
+</head>
+<body>
+    <h1>Exemplos de Formulários</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="idsel">Estado</label>
+            <select name="sel" id="idsel">
+                <!--botão de seleção-->
+
+                <option selected>---escolha aqui---</option> 
+                <!--para aparecer já selecionado-->
+                <optgroup label="Região Sudeste"> 
+                    <!--optgroup cria uma espécie de conjunto de dados, que não permite selecionar, apenas para organizar-->
+                    <option>Minas Gerais</option>
+                    <option>Rio de Janeiro</option>
+                    <option>São Paulo</option>
+                    <!--option são as opções que permitem seleção dentro do botão-->
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <!--optgroup cria uma espécie de conjunto de dados, que não permite selecionar, apenas para organizar-->
+                    <option>Maranhão</option>
+                    <option>Pernanbuco</option>
+                    <option>Rio Grande do Norte</option>
+                    <!--option são as opções que permitem seleção dentro do botão-->
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <!--botão de texto com lista, ou seja, posso deixar algumas opções para o usuário selecionar, mas caso não tenha a desejada, é possível digitar-->
+            <datalist id="listprof">
+                <option>Administrador</option>
+                <option>Médico</option>
+                <option>Dentista</option>
+                <option>Mestre de Obra</option>
+            </datalist>
+            <!--datalist seria para criar esta lista com as opções definidas-->
+            <!--é necessário vincular o id da datalist no botão input, usando o parâmetro list-->
+        </p>
+        
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" cols="30" rows="10" id="imsg"></textarea>
+            <!--botão para criar uma área personalizável de texto, um caixa, onde o usuário poderá digitar, aumentar ou diminuir o campo-->
+            <!--é possível configurar um tamanho de coluna e linha, porém é só para definir o tamanho da caixa, pois quando atingir esses tamanhos, vai ir quebrando a linha, não é limitante-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>
