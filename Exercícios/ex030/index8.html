@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Usando soma com Output</h1>
+    <form action="cadastro.php" method="get" autocomplete="on" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        <!--oninput = toda vez que tiver valores, na configuração de HTML do formulário ID isoma, vai somar os valores dos formulários ID inum1 + ID inum2-->
+
+    <p>
+        <label for="inum1">Número 1:</label>
+        <input type="number" name="num1" id="inum1" min="0" max="50" required>
+        <!--botão de número obrigatório, sendo o mínimo 0 e o máximo 50-->
+    </p>
+
+    <p>
+        <label for="inum2">Número 2:</label>
+        <input type="number" name="num2" id="inum2" min="0" max="50" required>
+        <!--botão de número obrigatório, sendo o mínimo 0 e o máximo 50-->
+    </p>
+
+    <p>
+        <label for="isoma">Soma:</label>
+        <output name="soma" id="isoma">0</output>
+        <!--botão de saída, neste exemplo será usado para mostrar uma soma, mas ele nunca será enviado no formulário, apenas serve para mostrar em tela-->
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="limpar">
+        <!--botão para enviar e outro para limpar os formulários-->
+    </p>
+
+    </form>
+    
+</body>
+</html>

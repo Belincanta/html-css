@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulário com output</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">   
+
+        <p>
+            <label for="iano">Ano de Nascimento</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2025" oninput="calcIdade()"> 
+            <!--botão de número, com valor mímio/máximo executando uma funcão em javascript-->          
+        </p>
+
+        <p>
+            <label for="iidade">Sua idade é</label>
+            <output id="iidade">0</output>
+            <!--botão de saída para mostrar o resultado da subtração (ano atual - ano infromado)-->
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            <!--botão de enviar e limpar os formulários-->
+        </p>
+
+        <script>
+            function calcIdade() { 
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+            }
+
+            /*
+                - criado uma variável 'atual' - para receber o ano atual;
+                - o parâmetro em HTML que vai conter no ID iidade é a substração do número da variável 'atual' com o número do ID 'iano' (valor informado em tela)
+            */
+        </script>
+
+    </form>
+    
+</body>
+</html>
