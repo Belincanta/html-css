@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /* Configurações para tela e paisagem (deitada) */
+
+body {
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom; /*imagem colar no canto inferior esquerdo */
+}
