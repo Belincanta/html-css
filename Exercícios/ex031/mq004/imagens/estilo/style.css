@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* estilo para mobile first */
+
+* { /*todas configurações */
+    font-family: Arial, Helvetica, sans-serif; /*letra*/
+    font-size: 1em; /*tamanho da fonte*/
+    margin: 0px; /*sem margem*/
+    padding: 0px; /*sem espaçamento interno*/
+    box-sizing: border-box; /*borda na letra*/
+}
+
+html { /*todo conteúdo em html*/
+    height: 100vh; /*altura 100% da tela*/
+}
+
+body { /*corpo do conteúdo*/
+    background: black url(../back-phone.jpg) no-repeat; /*cor de fundo e arregar uma imagem de fundo, para não repetir*/
+    background-position: center center; /*posição da imagem*/
+    background-size: cover; /*posicionamento da imagem*/
+}
+
+main { /*conteúdo principal*/
+    background-color: rgb(240, 248, 255); /*cor de fundo*/
+    width: 400px; /*largura*/
+    margin: auto; /*centraliza a caixa*/
+    margin-top: 20px;/*margim acima, jogando a caixa para baixo*/
+    border-radius: 10px; /*arredondar as bordas*/
+    padding: 10px; /*espaçamento interno da caixa*/
+}
+
+h1 { /*título*/
+    text-align: center; /*centralização*/
+    color: white; /*cor*/
+    text-shadow: 2px 2px 2px black; /*sombreamento do texto*/
+    font-size: 2em; /*tamanho da letra, 2x*/
+}
+
+img { /*imagem*/
+    display: block; /*ocupar toda a linha*/
+    margin: auto; /*centralizar o conteúdo*/
+}
+
+img#phone { display: block; } /*vai habilitar a imagem*/
+img#tablet { display: none; } /*vai ocultar a imagem*/
+img#print { display: none; } /*vai ocultar a imagem*/
+img#pc { display: none; } /*vai ocultar a imagem*/
+img#tv { display: none; } /*vai ocultar a imagem*/
