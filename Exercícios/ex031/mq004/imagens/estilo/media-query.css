@@ -1,3 +1,63 @@
 @charset "UTF-8";
 
 /* estilo para demais midias */
+
+/* Typical Device Breakpoint - tamanho de telas reponsivas
+
+- dispositicos pequenos - de  320px até 600px (configurado no mobile first);
+- telefone/celulares - de 600px até 768px. (configurado no mobile first);
+- tablet - de 768px até 1024px;
+- desktops - de 1024px até 1200px;
+- telas grandes - acima de 1200px.
+
+*/
+
+@media print { /*impressão*/
+    body {
+        background-image: url(../back-print.jpg);
+        
+    }
+
+    img#phone { display: none; } /*vai ocultar a imagem*/
+    img#tablet { display: none; } /*vai ocultar a imagem*/
+    img#print { display: block; } /*vai habilitar a imagem*/
+    img#pc { display: none; } /*vai ocultar a imagem*/
+    img#tv { display: none; } /*vai ocultar a imagem*/
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { /*tablet*/
+    body {
+        background-image: url(../back-tablet.jpg);
+    }
+
+    img#phone { display: none; } /*vai ocultar a imagem*/
+    img#tablet { display: block; } /*vai habilitar a imagem*/
+    img#print { display: none; } /*vai ocultar a imagem*/
+    img#pc { display: none; } /*vai ocultar a imagem*/
+    img#tv { display: none; } /*vai ocultar a imagem*/
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) { /*desktop*/
+    body {
+        background-image: url(../back-pc.jpg);
+    }
+
+    img#phone { display: none; } /*vai ocultar a imagem*/
+    img#tablet { display: none; } /*vai ocultar a imagem*/
+    img#print { display: none; } /*vai ocultar a imagem*/
+    img#pc { display: block; } /*vai habilitar a imagem*/
+    img#tv { display: none; } /*vai ocultar a imagem*/
+}
+
+@media screen and (min-width: 120px) { /*tv, grandes telas*/
+    body {
+        background-image: url(../back-tv.jpg);
+    }
+
+    img#phone { display: none; } /*vai ocultar a imagem*/
+    img#tablet { display: none; } /*vai ocultar a imagem*/
+    img#print { display: none; } /*vai ocultar a imagem*/
+    img#pc { display: none; } /*vai ocultar a imagem*/
+    img#tv { display: block; } /*vai habilitar a imagem*/
+}
