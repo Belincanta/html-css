@@ -15,7 +15,7 @@ html { /*todo conteúdo em html*/
 }
 
 body { /*corpo do conteúdo*/
-    background: black url(../back-phone.jpg) no-repeat; /*cor de fundo e arregar uma imagem de fundo, para não repetir*/
+    background: black url(../imagens/back-phone.jpg) no-repeat; /*cor de fundo e arregar uma imagem de fundo, para não repetir*/
     background-position: center center; /*posição da imagem*/
     background-size: cover; /*posicionamento da imagem*/
 }
