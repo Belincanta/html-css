@@ -22,8 +22,22 @@ header > h1 { /*título dentro do cabeçalho*/
     padding: 20px;    
 }
 
+span { /*ícone do menu*/
+    background-color: rgb(66, 66, 66);
+    width: 100vw;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+span:hover{ /*quando passar o mouse no menu*/
+    background-color: rgb(255, 253, 253);
+    color: black;
+}
+
 menu { /*menu*/
-   display: block;
+   display: none; /*não aparecer de cara o menu*/
 }
 
 menu > ul { /*lista dentro do menu*/
