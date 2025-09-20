@@ -5,30 +5,29 @@
 * { /*resete*/
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
-    padding: 0px;
-    
+    padding: 0px;    
 }
 
 body, html { /*corpo do conteúdo*/
-    background-color: lightgray;
+    background-color: rgb(238, 236, 236);
 }
 
 header { /*cabecalho*/
-    background-color: rgb(180, 180, 180);
-}
+    background-color: rgb(206, 205, 205);
+ }
 
 header > h1 { /*título dentro do cabeçalho*/
     text-align: center;
     padding: 20px;    
 }
 
-span { /*ícone do menu*/
+span.material-symbols-outlined  { /*ícone do menu*/
     background-color: rgb(66, 66, 66);
-    width: 100vw;
     color: white;
     padding: 10px;
     text-align: center;
     cursor: pointer;
+    display: block;
 }
 
 span:hover{ /*quando passar o mouse no menu*/
@@ -38,6 +37,7 @@ span:hover{ /*quando passar o mouse no menu*/
 
 menu { /*menu*/
    display: none; /*não aparecer de cara o menu*/
+  
 }
 
 menu > ul { /*lista dentro do menu*/
@@ -59,7 +59,7 @@ menu a:hover { /*quando passar o mouse no menu*/
 }
 
 main { /*conteudo principal*/
-    width: 90vw;
+    width: 80vw;
     background-color: white;
     margin: auto;
     margin-top: 10px;

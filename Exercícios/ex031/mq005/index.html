@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> <!--fonte fo google para poder usar um icone-->
-    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/style.css"> <!--estilização para mobile first-->
+    <link rel="stylesheet" href="estilo/media-query.css"> <!--estilização para demais telas-->
 
 </head>
-<body>
+<body onresize="mudouTamanho()"> <!--js quando mudar o tamanho-->
     <header> <!--cabeçalho-->
         <h1>Meu site</h1>
         <span class="material-symbols-outlined" onclick="clickMenu()">menu</span> <!--ícone de menu do google-->
@@ -43,6 +44,17 @@
 </body>
 
 <script>
+
+    function mudouTamanho() {
+        if (innerWidth >= 768) {
+            itens.style.display = 'block';
+        } else {
+            itens.style.display = 'none'
+        }
+    }
+
+    /*função criada para se o conteúdo do body for maior ou igual a 768px vai mostrar o conteudo do menu, caso contrário vai esconder*/
+
     function clickMenu() {
         if (itens.style.display == 'block') {
             itens.style.display = 'none'
