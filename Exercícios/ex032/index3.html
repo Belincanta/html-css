@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        div.conteiner{
+            background-color: rgb(94, 54, 54);
+            height: 100px;
+
+            display: flex; /*habilita o flexblox, possibilidando que o conteúdo se adapte na mesmo conteiner*/
+
+            flex-flow: row; /*para informar a direção do conteúdo e também sobre o seu espaçamento*/
+
+            justify-content: space-evenly; /*justificar o conteúdo no sentido do main-axis*/
+
+            align-items: center; /*justificar o conteúdo no sentido do cross-axis*/
+        }
+
+        div.item {
+            background-color: rgb(120, 120, 197);
+            border: 1px solid black;
+            text-align: center;
+
+            /*flex: auto; /*para personalizar o tamanho do conteúdo dentro do conteiner*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+    
+</body>
+</html>
