@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightgrey;
+        }
+        
+        main {
+            background-color: lightcoral;
+            width: 90vw;
+            height: 90vh;
+
+            display: flex; /*para habilitar o flexbox*/
+            flex-flow: row nowrap; /*tipo do fexbox*/
+            justify-content: center; /*alinhamento do main-cross*/
+            align-items: center; /*alinhamento do cross-axis*/
+        }
+
+        article {
+            background-color: rgb(34, 133, 133);
+            width: 200px;
+            height: 200px;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <main>
+        <article>
+            <h1>Flexbox</h1>
+        </article>
+    </main>
+    
+</body>
+</html>
