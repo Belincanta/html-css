@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        div.conteiner{
+            background-color: rgb(94, 54, 54);
+
+            display: flex; /*habilita o flexblox, possibilidando que o conteúdo se adapte na mesmo conteiner*/
+
+            flex-flow: row wrap;
+        }
+
+        div.item {
+            background-color: rgb(120, 120, 197);
+            text-align: center;
+            border: 1px solid black;
+            flex-basis: 200px; /*define o tamnho do item dentro do conteiner, se não definido é valor padrão é auto, ou seja, é conforme o tamanho do valor dentro*/        
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+
+    <div class="conteiner">
+        <div class="item">Alessandro</div>
+        <div class="item">Belincanta</div>
+        <div class="item">C</div>
+        <div class="item">Olá tudo bem?</div>
+        <div class="item">E</div>
+        <div class="item">Olá mundo</div>
+    </div>
+    
+</body>
+</html>
