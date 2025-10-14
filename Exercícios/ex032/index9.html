@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        div.conteiner{
+            background-color: rgb(94, 54, 54);
+
+            display: flex; /*habilita o flexblox, possibilidando que o conteúdo se adapte na mesmo conteiner*/
+
+            flex-flow: row wrap;
+        }
+
+        div.item {
+            background-color: rgb(120, 120, 197);
+            text-align: center;
+            border: 1px solid black;
+            flex-basis: 150px; /*define o tamnho do item dentro do conteiner, se não definido é valor padrão é auto, ou seja, é conforme o tamanho do valor dentro*/    
+            
+            flex-grow: 1; /*para saber o quanto o elemento vai crescer quando aumentar a tela, podendo ser diferente para cada item*/
+
+            flex-shrink: 1;/*para saber o quanto o elemento vai diminuir quando diminuir a tela, podendo ser diferente para cada item*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+    
+</body>
+</html>
