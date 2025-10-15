@@ -18,23 +18,32 @@
             background-color: rgb(120, 120, 197);
             text-align: center;
             border: 1px solid black;
-            flex-basis: 200px; /*define o tamnho do item dentro do conteiner, se não definido é valor padrão é auto, ou seja, é conforme o tamanho do valor dentro*/    
+            /*flex-basis: 200px; /*define o tamnho do item dentro do conteiner, se não definido é valor padrão é auto, ou seja, é conforme o tamanho do valor dentro*/    
         
         }
         
         div#xa {
-            flex-grow: 1;
-            flex-shrink: 5;
+            /*flex-grow: 2;
+            flex-shrink: 0;
+            flex-basis: 100px;*/
+
+            flex: 2 0 100px; /*shorthand para configurar o grow, shrink e basis, consequentemente*/
         }
 
         div#xb {
-            flex-grow: 0;
+            /*flex-grow: 1;
             flex-shrink: 0;
+            flex-basis: 100px;*/
+
+            flex: 1 0 100px; 
         }
 
         div#xc {
-            flex-grow: 0;
-            flex-shrink: 10;
+            /*flex-grow: 3;
+            flex-shrink: 0;
+            flex-basis: 100px;*/
+
+            flex: 3 0 100px;
         }
 
     </style>
