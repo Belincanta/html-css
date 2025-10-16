@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;    
+}
+
+body {
+    background-color: rgb(192, 189, 189);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: gray;
+    padding: 10px;
+    color: white;
+    
+}
+
+nav > h1 {
+    margin-bottom: 10px;
+}
+
+nav > a {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;    
+}
+
+nav > a:hover {
+    background-color: rgb(168, 168, 168);
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main > p {
+    text-align: justify;
+    text-indent: 20px;
+    padding: 10px;
+}
