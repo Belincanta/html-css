@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+header, header > nav {
+    flex-flow: column nowrap; /*transformar o meu na coluna quando chegar no tamanho mobile*/
+}
+
+header > h1 {
+    flex-basis: 50px; /*diminuir o eixo principal, para ficar mais próximo do menu*/
+}
+
+header > nav {
+    width: 90vw;
+}
