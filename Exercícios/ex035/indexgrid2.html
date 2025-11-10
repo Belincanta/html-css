@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Começando com Grid</title>
+
+    <style>
+        div.conteiner {
+            border: 5px solid black;
+            height: 250px;
+
+            display: grid;/*para habilitar o grid layout, de primeira não vai acontecer nada*/
+
+            /*grid-template-columns: auto auto auto; /*define a quantidade de colunas e o seu tamanho.
+            grid-template-rows: auto auto auto;/*define a quantidade de linhas e o seu tamanho, neste caso não precisava*/
+
+            grid-template: repeat(3, auto) / repeat(3, auto); /*substitui a configuração de auto, auto, ato, primeiro linhas e depois colunas*/
+
+            gap: 10px; /*para dar espaçamento entre os itens*/
+
+            /*align-items: end; /*alinhamento vertical do item
+            justify-items: center; /*alinhamento horizontal do item*/
+
+            place-items: start center; /*substitui o align itens e o justify itens, sucessivamente*/
+
+            /*align-content: space-between; /*alinhamento vertical do conteiner
+            justify-content: end; /*alinhamento horizontal do conteiner*/
+
+            place-content: space-between end; /*substitui o align content e o justify content, sucessivamente*/
+
+            
+        }
+
+        div.item {
+            border: 2px solid red;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+    </div>
+    
+</body>
+</html>

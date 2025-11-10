@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Começando com Grid</title>
+
+    <style>
+        div.conteiner {
+            border: 5px solid black;
+            
+            display: grid;/*para habilitar o grid layout, de primeira não vai acontecer nada*/
+
+            grid-template-rows: repeat(3, 80px);
+            grid-auto-rows: 80px; /*toda vez que acrescentar uma nova linha, virá no tamanho configurado*/
+        
+            grid-template-columns: 1fr 50% 1fr; /*1fr quer dizer que é uma fração do espaço disponível.
+            /*50% quer dizer que é a porcentagem sob o total do conteiner*/
+            grid-auto-columns: 150px;/*toda vez que acrescentar uma nova coluna, virá no tamanho configurado*/
+            
+            gap: 10px; /*para dar espaçamento entre os itens*/
+
+            place-items: normal normal; /*substitui o align itens e o justify itens, sucessivamente*/         
+
+            place-content: normal normal; /*substitui o align content e o justify content, sucessivamente*/
+
+            
+        }
+
+        div.item {
+            border: 2px solid red;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+    </div>
+    
+</body>
+</html>
