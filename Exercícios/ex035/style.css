@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.container {
+    display: grid; /*habilita o grid layout*/
+    grid-template: repeat(3, 100px) / repeat(4, 1fr); /*define a quantidade de linhas e colunas*/
+    border: 2px solid black;   
+    gap: 10px; 
+}
+
+.caixa1 {
+    background-color: rgb(32, 32, 32);
+    color: white;    
+    grid-row-start: 1; /*onde a linha começa*/
+    grid-row-end: 2; /*onde a linha termina*/
+    grid-column-start: 1; /*onde a coluna começa*/
+    grid-column-end: 5; /*onde a coluna termina*/
+}
+
+.caixa2 {
+    background-color: silver;
+    color: white;
+    grid-row-start: 2; /*onde a linha começa*/
+    grid-row-end: 5; /*onde a linha termina*/
+    grid-column-start: 1; /*onde a coluna começa*/
+    grid-column-end: 3; /*onde a coluna termina*/
+}
+
+.caixa3 {
+    background-color: brown;
+    color: white;
+    grid-row-start: 2; /*onde a linha começa*/
+    grid-row-end: 5; /*onde a linha termina*/
+    grid-column-start: 3; /*onde a coluna começa*/
+    grid-column-end: 5; /*onde a coluna termina*/
+}
+
+/*é possivel utilizar os valores negativos para se referir a última linha ou coluna, exemplo, começar na linha 1 e terminar na -1*/
